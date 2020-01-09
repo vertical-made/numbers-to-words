@@ -2,6 +2,8 @@
 
 A collection of dotnet extension methods to convert numbers to their linguistic representations
 
+- [nuget package](https://www.nuget.org/packages/numbers-to-words/)
+
 ## Use
 
 ```csharp
