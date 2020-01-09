@@ -20,5 +20,10 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
-  "cSpell.words": ["Xunit", "verticalmade"]
+  "cSpell.words": [
+    "Xunit",
+    "nuget",
+    "rohith",
+    "verticalmade"
+  ]
 }

@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>8.0</LangVersion>
@@ -9,9 +10,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup>
-    <PackageId>NumbersToWords</PackageId>
+    <PackageId>numbers-to-words</PackageId>
     <Version>0.1</Version>
+    <Title>numbers-to-words</Title>
+    <Description>A collection of dotnet extension methods to convert numbers to their linguistic representations</Description>
     <Authors>Vertical Made</Authors>
     <Company>Vertical Made</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/vertical-made/numbers-to-words</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/vertical-made/numbers-to-words</RepositoryUrl>
   </PropertyGroup>
 </Project>
