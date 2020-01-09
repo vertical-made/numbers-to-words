@@ -18,10 +18,12 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
-      - name: Pack
-        run: dotnet pack ./NumbersToWords/NumbersToWords.csproj
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.100
       - name: Publish
         uses: rohith/publish-nuget@v1
         with:
-          project_dir: ./NumbersToWords
+          project_dir: NumbersToWords
           nuget_key: ${{ secrets.NUGET_API_KEY }}
