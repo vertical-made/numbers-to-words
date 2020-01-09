@@ -8,4 +8,10 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NumbersToWords</PackageId>
+    <Version>0.1</Version>
+    <Authors>Vertical Made</Authors>
+    <Company>Vertical Made</Company>
+  </PropertyGroup>
 </Project>
