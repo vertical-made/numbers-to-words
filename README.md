@@ -1,5 +1,15 @@
 # numbers-to-words
+
 A collection of dotnet extension methods to convert numbers to their linguistic representations
+
+## Use
+
+```csharp
+using VerticalMade.NumbersToWords;
+
+var input = 19_000_000_001.01M;
+var dollars = input.ToDollarsAndCents(); // Nineteen billion and one dollars and one cent
+```
 
 ## Committing
 
