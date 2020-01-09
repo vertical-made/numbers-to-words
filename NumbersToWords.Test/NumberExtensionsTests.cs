@@ -25,7 +25,7 @@ namespace VerticalMade.Test.NumbersToWords
         [InlineData(34, "thirty-four dollars")]
         [InlineData(40, "forty dollars")]
         [InlineData(95, "ninety-five dollars")]
-        [InlineData(100, "one hundred dollars")]
+        [InlineData(100, "WRONG")]
         [InlineData(106, "one hundred and six dollars")]
         [InlineData(112, "one hundred and twelve dollars")]
         [InlineData(250.60, "two hundred and fifty dollars and sixty cents")]
