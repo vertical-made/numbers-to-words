@@ -65,7 +65,7 @@ namespace VerticalMade.NumbersToWords
         /// DollarAmountExtensionsTests.cs for examples of how
         /// particular cases are rendered.
         /// </remarks>
-        private static StringBuilder ToEnglish(this long number)
+        public static StringBuilder ToEnglish(this long number)
         {
             // One edge case to handle
             if (number == 0)

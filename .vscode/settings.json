@@ -18,6 +18,7 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "cSpell.words": [
-        "verticalmade"
+      "Xunit",
+      "verticalmade"
     ]
 }

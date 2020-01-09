@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "command": "dotnet",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceRoot}/NumbersToWords/NumbersToWords.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Test",
+      "command": "dotnet",
+      "args": [
+        "test",
+        "${workspaceRoot}/NumbersToWords.Test/NumbersToWords.Test.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": "test"
+    }
+  ]
+}
