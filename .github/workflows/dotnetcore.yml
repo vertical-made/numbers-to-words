@@ -13,3 +13,5 @@ jobs:
           dotnet-version: 3.1.100
       - name: Build with dotnet
         run: dotnet build --configuration Release NumbersToWords/NumbersToWords.csproj
+      - name: Test
+        run: dotnet test NumbersToWords.Test/NumbersToWords.Test.csproj
