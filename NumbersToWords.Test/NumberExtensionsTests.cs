@@ -42,6 +42,14 @@ namespace VerticalMade.Test.NumbersToWords
         [InlineData(-1000.01, "negative one thousand dollars and one cent")]
         public void ToDollarsAndCents_ShouldConvertAppropriately(
             decimal input, string expected
-        ) => Assert.Equal(expected, ((decimal)input).ToDollarsAndCents());
+        ) => Assert.Equal(expected, input.ToDollarsAndCents());
+
+        [Theory]
+        [InlineData(112, "one hundred and twelve dollars and zero cents")]
+        [InlineData(1_000, "one thousand dollars and zero cents")]
+        [InlineData(-1000, "negative one thousand dollars and zero cents")]
+        public void ToDollarsAndCents_GivenZeroCents_AndFlag_ShouldIncludeZeroCents(
+            decimal input, string expected
+        ) => Assert.Equal(expected, input.ToDollarsAndCents(true));
     }
 }

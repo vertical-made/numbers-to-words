@@ -11,7 +11,10 @@ namespace VerticalMade.NumbersToWords
         /// Converts the given decimal to an English expression
         /// of dollars and cents in string format
         /// </summary>
-        public static string ToDollarsAndCents(this decimal number)
+        /// <param name="number">Number to convert to English</param>
+        /// <param name="includeZeroCents">Includes "and zero cents" if the number is a round dollar amount</param>
+        /// <returns>English representation of the given monetary amount</returns>
+        public static string ToDollarsAndCents(this decimal number, bool includeZeroCents = false)
         {
             var response = new StringBuilder();
 
@@ -35,7 +38,7 @@ namespace VerticalMade.NumbersToWords
             var cents = (long)justCents;
 
             // Only add the cent value if it's non-zero
-            if (cents > 0)
+            if (cents > 0 || includeZeroCents)
             {
                 response.AppendSpace()
                 .Append(Words.And)
